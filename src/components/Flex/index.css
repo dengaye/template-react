@@ -1,0 +1,54 @@
+.flex-wrap {
+    display: flex;
+    border: 1px solid #eee;
+    line-height: 30px;
+    padding: 0 10px;
+    flex: 1;
+}
+
+.flex-header {
+    color: hotpink;
+}
+
+.flex-content {
+    display: flex;
+    color: goldenrod;
+    padding: 0 10px;
+    flex:  1;
+    overflow: hidden;
+    width: 0;
+}
+
+.flex-actions {
+    margin-left: auto;
+    width: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.flex-actions:hover .flex-actions-content{
+    display: block;
+}
+
+.flex-actions-content {
+    position: absolute;
+    border: 1px solid #eee;
+    background-color: #ddd;
+    display: none;
+}   
+
+.flex-actions-item {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.flex-actions-content .flex-actions-item:last-child {
+    border-bottom: none;
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: nowrap;
+}
